@@ -18,8 +18,6 @@ dir="$( getent passwd "$USER" | cut -d: -f6 )/.config/flatpakApps"
 
 [ -d $dir ] || mkdir -p $dir
 
-
-
 if [ $# -eq 0  ];
 then
 	for (( i=0; i<=$appNum-1; i++ ))
@@ -36,7 +34,7 @@ then
     		link="/usr/bin/${linkname[0]}"
 		
 		echo ${link,,}
-    		sudo ln $file ${link,,}
+    		sudo ln $file ${link,,} 2> /dev/null
 	done
 
 	echo "Links created successfully"
