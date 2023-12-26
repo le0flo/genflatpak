@@ -15,5 +15,4 @@ Just put anythings you want as an argument, that will trigger the delete functio
 
 Make sure that you chmod +x the file before trying to run it
 
-> Made during 2 hours of GPO
-> "Mi piace molto la sua materia signora s." - leo
+> Made during 2 hours of GPO, no hate
